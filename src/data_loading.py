@@ -10,5 +10,6 @@ def load_traindata():
 
 def load_testdata():
     df = pd.read_csv(r'D:\DATA_SCIENCE\PROJECTS\ML Disease Diagnosis\data\Testing.csv')
+    df.dropna(axis=1)
     return df
 
